@@ -82,11 +82,19 @@ button {
     margin-top: 2em;
 }
 
+.sedans-cta {
+    color: var(--Bright-orange);
+}
+
 .sedans-cta:hover {
     background-color: var(--Bright-orange);
     cursor: pointer;
     color: white;
     border: 1px solid white;
+}
+
+.suvs-cta {
+    color: var(--Dark-cyan);
 }
 
 .suvs-cta:hover {
@@ -95,6 +103,11 @@ button {
     color: white;
     border: 1px solid white;
 }
+
+.luxury-cta {
+    color: var(--Very-dark-cyan);
+}
+
 
 .luxury-cta:hover {
     background-color: var(--Very-dark-cyan);

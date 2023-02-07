@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+
+
+:root {
+
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 1em;
+    max-width: 30em;
+    
+}
+
+.col {
+    padding: 3em 2.3em;
+    
+}
+
+.sedans {
+    background-color: var(--Bright-orange);
+    border-radius: .7em .7em 0 0;
+}
+
+.suvs {
+    background-color: var(--Dark-cyan);
+
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 .7em .7em;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: rgb(224, 224, 224);
+    line-height: 1.8em;
+    font-size: .9rem;
+}
+
+button {
+    border-radius: 2em;
+    width: 10em;
+    height: 3.4em;
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    font-size: .8rem;
+    margin-top: 2em;
+}
+
+.sedans-cta:hover {
+    background-color: var(--Bright-orange);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+
+.suvs-cta:hover {
+    background-color: var(--Dark-cyan);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+
+.luxury-cta:hover {
+    background-color: var(--Very-dark-cyan);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+
+@media only screen and (min-width:965px) {
+    .container {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .sedans {
+        border-radius: .7em 0 0 .7em;
+    }
+
+    .luxury {
+        border-radius: 0 .7em .7em 0;
+    }
+}
+
+@media only screen and (min-width:1130px) {
+    .container {
+        width: 1130px;
+        margin: 0 auto;
+    }
+}
